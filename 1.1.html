@@ -8,9 +8,28 @@
   <style>
     body{margin: 10px;}
     .demo-carousel{height: 200px; line-height: 200px; text-align: center;}
+    .layui-tab-title li{
+      display: block;
+    }
   </style>
 </head>
 <body>
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="height:400px;">
+        <ul class="layui-tab-title" style='width:200px;overflow:auto;height: 200px;float: left;'>
+          <li class="layui-this">网站设置</li>
+          <li>用户管理</li>
+          <li>权限分配</li>
+          <li>商品管理</li>
+          <li>订单管理</li>
+        </ul>
+        <div class="layui-tab-content" style="height: 100px; margin-left: 200px;">
+          <div class="layui-tab-item layui-show">内容不一样是要有，因为你可以监听tab事件（阅读下文档就是了）</div>
+          <div class="layui-tab-item">内容2</div>
+          <div class="layui-tab-item">内容3</div>
+          <div class="layui-tab-item">内容4</div>
+          <div class="layui-tab-item">内容5</div>
+        </div>
+      </div> 
   <button class="layui-btn layui-btn-primary">原始按钮</button>
   <button class="layui-btn">默认按钮</button>
   <button class="layui-btn layui-btn-normal">百搭按钮</button>
